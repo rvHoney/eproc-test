@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const mabryPro = localFont({
+  src: "./fonts/MabryPro.woff",
+  variable: "--font-mabry",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const inter = localFont({
+  src: "./fonts/Inter.ttf",
+  variable: "--font-inter",
   weight: "100 900",
 });
 
@@ -26,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${mabryPro.variable} ${inter.variable} antialiased px-4 md:px-16 px-50`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
