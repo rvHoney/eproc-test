@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-text: #0F1012;
+  --secondary-text: #8E96A2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary-text: #0F1012; /* à changer */
+    --secondary-text: #8E96A2; /* à changer */
   }
 }
 

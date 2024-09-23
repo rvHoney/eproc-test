@@ -9,9 +9,9 @@ export default function Navbar() {
     return (
         <nav className="relative flex items-center justify-between bg-white text-black h-24">
             <div className="flex items-center space-x-8">
-                <a href="/" className="font-bold font-[family-name:var(--font-mabry)] hidden md:block">Clothes</a>
-                <a href="/about" className="font-[family-name:var(--font-mabry)] hidden md:block">About Us</a>
-                <a href="/gallery" className="font-[family-name:var(--font-mabry)] hidden md:block">Gallery</a>
+                <a href="#clothes" className="font-bold font-[family-name:var(--font-mabry)] hidden md:block">Clothes</a>
+                <a href="#" className="font-[family-name:var(--font-mabry)] hidden md:block">About Us</a>
+                <a href="#" className="font-[family-name:var(--font-mabry)] hidden md:block">Gallery</a>
             </div>
             <div className="absolute left-1/2 transform -translate-x-1/2">
                 <Image
