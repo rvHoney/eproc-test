@@ -1,10 +1,13 @@
-import Header from "@/components/Header";
+import Header from '../components/Header';
+import FeaturedProductList from '../components/FeaturedProductList';
 
-export default function Home() {
+async function Home() {
   return (
-    <>
-    <Header />
-    
-    </>
+    <div>
+      <Header />
+      <FeaturedProductList />
+    </div>
   );
 }
+
+export default Home;
