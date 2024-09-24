@@ -11,7 +11,6 @@ export default function FeaturedProductList() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState<Product[]>([]);
-    const [productsCount, setProductsCount] = useState(0);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -44,6 +43,7 @@ export default function FeaturedProductList() {
         }
     };
 
+    // Limiter les produits à 8
     const limitedProducts = products.slice(0, 8);
 
     return (
@@ -52,7 +52,7 @@ export default function FeaturedProductList() {
                 <h3 className="font-[family-name:var(--font-mabry)] text-[24px] mb-0">Featured Products</h3>
                 <div className="flex items-center gap-2 font-[family-name:var(--font-mabry)]">
                     <LArrowLong className="cursor-pointer" onClick={handleScrollPrev} />
-                    {limitedProducts.length > 0 ? currentIndex + 1 : 0} / {limitedProducts.length}
+                    {currentIndex + 1} / {limitedProducts.length}
                     <RArrowLong className="cursor-pointer" onClick={handleScrollNext} />
                 </div>
             </div>
