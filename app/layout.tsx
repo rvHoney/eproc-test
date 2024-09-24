@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 const mabryPro = localFont({
   src: "./fonts/MabryPro.woff",
@@ -27,9 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${mabryPro.variable} ${inter.variable} antialiased px-4 md:px-16 px-50`}
+        className={`${mabryPro.variable} ${inter.variable} antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>

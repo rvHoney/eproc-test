@@ -18,7 +18,7 @@ export default function FeaturedProductItem({ product }: FeaturedProductItemProp
     const truncatedName = truncateText(product.name, 50);
 
     return (
-        <div className="border border-black rounded-[5px] flex flex-col md:flex-row w-fit h-fit">
+        <div className="border border-black rounded-[5px] flex flex-col md:flex-row w-fit h-fit transition-transform transition-shadow duration-200 hover:shadow-[4px_4px_0_black] hover:-translate-x-0.5 hover:-translate-y-0.5 overflow-x-hidden overflow-y-hidden">
             <div
                 className="bg-cover bg-center h-[324px] w-[324px] border-b md:border-b-0 md:border-r border-black"
                 style={{ backgroundImage: `url(${product.image})` }}

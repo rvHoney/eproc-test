@@ -43,11 +43,10 @@ export default function FeaturedProductList() {
         }
     };
 
-    // Limiter les produits à 8
     const limitedProducts = products.slice(0, 8);
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden mb-16">
             <div className="flex justify-between items-center mb-6">
                 <h3 className="font-[family-name:var(--font-mabry)] text-[24px] mb-0">Featured Products</h3>
                 <div className="flex items-center gap-2 font-[family-name:var(--font-mabry)]">
